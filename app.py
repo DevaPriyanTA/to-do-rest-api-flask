@@ -77,7 +77,7 @@ class ToDoList(Resource):
 		return todos 
 
 
-api.add_resource(ToDo, '/https://to-do-list-flask-rest-api.herokuapp.com/todos/<int:todo_id>')
-api.add_resource(ToDoList,'/https://to-do-list-flask-rest-api.herokuapp.com/todos')
+api.add_resource(ToDo, '/todos/<int:todo_id>')
+api.add_resource(ToDoList,'/todos')
 if __name__=='__main__':
 	app.run(debug=True)
